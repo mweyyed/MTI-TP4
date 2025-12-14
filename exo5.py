@@ -24,5 +24,3 @@ class UserNotification:
     def notify(self, user, message):
         self.notifier.send(user, message)
 
-notifier = UserNotification(SMSService())
-notifier.notify("Ali", "Your report is ready!")
